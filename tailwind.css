@@ -3,3 +3,54 @@
 @import "tailwindcss/components";
 
 @import "tailwindcss/utilities";
+
+.footer {
+    @apply pt-8
+}
+
+.footer__container {
+    @apply gap-y-14 lg:p-0 grid-cols-3 ;
+}
+
+.footer__bg {
+    @apply bg-indigo-700 pt-8 pb-12 lg:pb-14
+}
+
+.footer__title {
+    @apply text-lg mb-1
+}
+
+.footer__subtitle {
+    @apply text-sm
+}
+
+.footer__links {
+    @apply flex flex-col gap-y-6 md:mt-16
+}
+
+.footer__links:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer__social {
+    font-size: 1.25rem;
+    margin-right: var(--mb-1-5);
+}
+
+.footer__social:hover {
+    color: var(--first-color-lighter);
+}
+
+.footer__copy {
+    font-size: var(--smaller-font-size);
+    text-align: center;
+    margin-top: var(--mb-3);
+}
+
+.footer__title,
+.footer__subtitle,
+.footer__links,
+.footer__social,
+.footer__copy {
+    color: #FFF;
+}
